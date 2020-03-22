@@ -1,0 +1,33 @@
+import java.util.*;
+class Main{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+       int number=sc.nextInt();
+    //   int sum=0;
+    //   int power=0;
+    //   while(number>0)
+    //   {
+    //       int rem=number%10;
+    //     //   sum=(int)(sum+rem*(Math.pow(2,power)));
+    //       number=number/10;
+    //       power++;
+    //   }
+    //   System.out.println(sum);
+    
+    
+    int pow=1;
+    int decimal=0;
+    while(number>0)
+    {
+        int rem=number%10;
+        decimal=decimal+rem*pow;
+        pow=pow*2;
+        number=number/10;
+    }
+    System.out.println(decimal);
+    
+    
+      
+    }
+}

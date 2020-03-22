@@ -1,0 +1,19 @@
+import java.util.*;
+class Main{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+       int number=sc.nextInt();
+       int pow=1;
+       int binary=0;
+       while(number>0)
+       {
+           int rem=number%2;
+           binary=binary+rem*pow;
+           pow=pow*10;
+           number=number/2;
+       }
+       System.out.println(binary);
+      
+    }
+}
